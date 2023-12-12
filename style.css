@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* IMPORTANDO FONTE */
+@font-face {
+    font-family: 'cedora-bold';
+    src: url(fonts/Cedora-BoldStd.otf);
+}
+
+@font-face {
+    font-family: 'cedora';
+    src: url(fonts/Cedora-RegularStd.otf);
+}
+
+/* CABEÇALHO */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+/* LOGO */
+header img { 
+    width: 250px;
+}
+
+/* MENU - BLOCO */
+header .menu {
+    display: flex;
+    gap: 50px;
+}
+
+/* MENU */
+header .menu p {
+    font-family: 'cedora-bold';
+}
+
+/* LINK MENU */
+header .menu p a {
+    text-decoration: none;
+    color: black;
+}
+
+/* LINK MENU - HOVER */
+header .menu p #span1:hover{
+    text-decoration: none;
+    color:#0560AC;
+}
+
+
+header .menu p #span2{
+    text-decoration: none;
+    color: white;
+    background-color: #0560AC;
+    padding: 7px;
+}
+
+
+header .menu p #span2:hover{
+    background-color: rgb(12, 31, 100);
+}
+
+
+
+
+/* ------------------------------ */
+
+/* TABLET - CABEÇALHO*/ 
+@media only screen and (max-width: 768px) {
+    header img {
+        width: 150px; 
+    }
+
+    header .menu {
+        flex-direction: row; 
+        align-items: center;
+        gap: 20px; 
+        font-size: 13px;
+    }
+
+    header{
+        padding: 10px;
+    }
+}
+
+/* CELULAR - CABEÇALHO*/
+@media only screen and (max-width: 480px) {
+    header img {
+        width: 120px; 
+    }
+
+    header .menu {
+        gap: 10px; 
+    }
+
+    header .menu p a{
+        font-size: 9px;
+    }
+
+}
+
+/* -------------------------- */
+.margem{
+    height: 100px;
+    background-color: white;
+}
+
+/* BANNER */
+.banner{
+    font-family: 'Lilita One', sans-serif;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    background-image: url(img/banner-idoso.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+/* TITULOS */
+.banner .titulo{ 
+    width: 65%;   
+    border: 1px solid transparent;
+}
+
+/* TITULOS - H1 */
+.banner .titulo h1{
+    color: #050C26;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 900;
+    margin: 170px;
+}
+
+/* TITULOS - H1 (SPAN)*/
+.banner .titulo h1 span{
+    color: #0560AC;
+}
+
+/* PARAGRAFO */
+.banner .titulo p{
+    color: gray;
+    padding-top: 20px;
+    font-size: 17px;
+}
+
+/* PARAGRAFO - SPAN*/
+.banner .titulo p span{
+    color: #0560AC;
+    font-weight: bold;
+}
+
+/* BANNER IMAGEM */
+.banner .foto{
+    color: gray;
+    overflow: hidden; /* Cortar o conteúdo excedente */
+}
+
+
+/* -----------------*/
+
+/* CELULAR - CABEÇALHO*/
+@media only screen and (max-width: 480px) {
+    .banner {
+        height: 400px;
+        width: auto;
+        background-position: right;
+        overflow: hidden;
+    }
+
+    .banner .titulo{
+        font-size: 35px;       
+    }
+
+    .banner .titulo h1{
+        font-size: 20px;
+        display: none;       
+    }
+
+    .banner .titulo h1 span{
+        font-size: 20px;
+        display: none;      
+    }
+
+}
+
+
+/* TABLET */ 
+@media only screen and (max-width: 768px) {
+
+    .banner .titulo h1{ 
+        width: 350px;
+        font-size: 35px;
+    }
+
+
+}
+
+
+/* -------------------- */ 
+
+
+/* BANNER - ICONES */
+.banner-icones{
+    font-family: 'cedora-bold';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 50px;
+    gap: 30px;
+}
+
+/* ICONES */
+.banner-icones img{
+    width: 40%;
+}
+
+.banner-icones p{
+    font-size: 20px;
+}
+
+/* CADA BLOCO */
+.banner-icones .bloco {
+    text-align: center; 
+    width: 35%;
+}
+
+
+/* CELULAR */
+@media only screen and (max-width: 480px) {
+    .banner-icones {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+}
+
+
+/* -------------------- */ 
+
+.banner2{
+    height: 700px;
+    background-image: url(img/idosa.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'cedora-bold';
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.banner2 h1{
+    background-color: #0560AC;
+    color: white;
+    padding: 7px;
+}
+
+.banner2 p{
+    background-color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+
+/* -------------------- */ 
+
+/* CELULAR - CABEÇALHO*/
+@media only screen and (max-width: 480px) {
+    .banner2 {
+        padding: 10px;
+        height: 500px;
+        overflow: hidden;
+        background-attachment: local;
+        background-position: top;
+
+    }
+
+    .banner2 h1 {
+        font-size: 15px;
+    }
+
+    .banner2 p {
+        font-size: 15px;
+    }
+}
+
+/* ---------------------- */
+
+
+/* TITULO */
+.atividades h1{
+    font-family: 'cedora-bold';
+    text-align: center;
+    padding: 30px;
+}
+
+.atividades .cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.atividades .cards .bloco{
+    background-color: #F7F7F7;
+    box-shadow: 1px 2px 5px 2px #d5d5d5;
+    width: 600px;
+    font-family: 'cedora';
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+/* TEXTO */
+.atividades .cards .bloco p{
+    padding-left: 10px;
+}
+
+
+/* IMAGEM */
+.atividades .cards .bloco img{
+    border: 1px solid transparent;
+    
+}
+
+
+/* ---------------------- */
+
+.pessoas{
+    margin-top: 80px;
+    background-color: #0560AC;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.pessoas img{
+    width: 80%;
+}
+
+.pessoas .textos{
+    width: 50%;
+}
+
+.pessoas .textos h1{
+    font-family: 'cedora-bold';
+    color: white;
+    font-size: 45px;
+}
+
+.pessoas .textos p{
+    font-family: 'cedora';
+    color: white;
+    padding: 20px 0 0 0;
+    color: #d5d5d5;
+}
+
+
+/* CELULAR */
+@media only screen and (max-width: 480px) {
+    .pessoas {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .pessoas img{
+        width: 300px;
+    }
+
+    .pessoas .textos {
+        font-size: 25px;
+        width: 250px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .pessoas .textos h1{
+        line-height: 1;
+    }
+
+    .pessoas .textos p{
+        font-size: 15px;
+        width: 250px;
+    }
+
+}
+
+/* --------------------------- */
+.container .subtitulo{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+
+.container{
+    background-color: antiquewhite;
+    font-family: 'cedora';
+    background: rgb(5,96,172);
+    background: linear-gradient(3deg, rgba(5,96,172,1) 0%, rgba(17,79,129,1) 100%);
+    padding: 30px;
+}
+
+.container .blocos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+.container .texto{
+    padding: 7px;
+}
+
+.container .blocos .card{    
+    border-radius: 15px;
+    width: 350px;
+    padding: 10px;
+    background-color: white;
+    transition: background-color 0.9s ease;
+    cursor: pointer;
+}
+
+/* HOVER */
+.container .blocos .card:hover{    
+    color: white;
+    background-color: #050C26;
+    scale: 1.05;
+}
+
+.comentador{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+
+.comentador img{
+    width: 50px;
+}
+
+.container .star{
+    padding: 7px;
+}
+
+/* -------------------- */
+
+
+footer{
+    height: auto;
+    background-color: black;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'cedora';
+    color: white;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+
+
+footer .textos{
+    text-align: center;
+}
+
+footer .logo img{
+    width: 250px;
+}
+
+footer .social img{
+    width: 35px;
+}
+
+footer .social{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .redes{
+    display: flex;
+    gap: 30px;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+
+footer p{
+    color: white;
+    padding-left: 7px;
+}
+
+
+/* CELULAR */
+@media only screen and (max-width: 480px) {
+    footer h3{
+        padding: 20px;
+        font-size: 15px;
+    } 
+    
+    footer .redes{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    footer .redes .social{
+        border: 1px solid transparent;
+
+
+    }
+}
